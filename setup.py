@@ -4,19 +4,15 @@ import os
 
 from setuptools import setup
 
-with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
+with open('README.md') as readme:
     README = readme.read()
 
-with open(os.path.join(os.path.dirname(__file__), 'requirements.in')) as requirements:
-    REQUIREMENTS = [req.split('#egg=')[1] if '#egg=' in req else req for req in requirements.readlines()]
-
-
-# allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+with open('requirements.in') as requirements:
+    REQUIREMENTS = requirements.readlines()
 
 setup(
     name='dmdm',
-    version='1.0.1',
+    version='1.0.2',
     packages=['dmdm'],
     install_requires=REQUIREMENTS,
     include_package_data=True,
