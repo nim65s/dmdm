@@ -16,7 +16,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='dmdm',
-    version='1.0.0',
+    version='1.0.1',
     packages=['dmdm'],
     install_requires=REQUIREMENTS,
     include_package_data=True,
