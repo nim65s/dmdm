@@ -32,7 +32,7 @@ setup(
     url='https://github.com/nim65s/dmdm',
     author='Guilhem Saurel',
     author_email='webmaster@saurel.me',
-    python_requires='>=3.4',
+    python_requires='>=3.5',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
