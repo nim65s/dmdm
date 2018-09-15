@@ -4,8 +4,18 @@ from django.template.loader import get_template
 from mdmail.api import EmailContent
 
 
-def send_mail(subject, message, from_email, recipient_list, context=None, request=None, fail_silently=False,
-              css=None, image_root='.', auth_user=None, auth_password=None, connection=None):
+def send_mail(subject,
+              message,
+              from_email,
+              recipient_list,
+              context=None,
+              request=None,
+              fail_silently=False,
+              css=None,
+              image_root='.',
+              auth_user=None,
+              auth_password=None,
+              connection=None):
     connection = connection or get_connection(
         username=auth_user,
         password=auth_password,
