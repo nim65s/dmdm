@@ -19,7 +19,7 @@ Write your email in markdown, and send them in txt & html.
 ## Usage
 
 This replaces django's `django.core.email.send_mail`, but the mail will have an html alternative rendered from the text
-part with markdown. You can also provide a custon `css` and even images (that will be inlined) located in `image_root`.
+part with markdown. You can also provide a custom `css` and even images (that will be inlined) located in `image_root`.
 
 
 ```python
