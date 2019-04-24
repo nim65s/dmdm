@@ -21,10 +21,17 @@ Write your email in markdown, and send them in txt & html.
 This replaces django's `django.core.email.send_mail`, but the mail will have an html alternative rendered from the text
 part with markdown. You can also provide a custon `css` and even images (that will be inlined) located in `image_root`.
 
-If you want to write your markdown in a template, just put the name of the template in `message` and add a `context`
-(which can be `{}`) and eventually a `request`.
 
 ```python
+from dmdm import send_mail
+
 send_mail(subject, message, from_email, recipient_list, context=None, request=None, fail_silently=False, css=None,
           image_root='.', auth_user=None, auth_password=None, connection=None)
+```
+
+If you want to write your markdown in a template, just put the name of the template in `message` and add a `context`
+(which can be `{}`) and eventually a `request`:
+
+```
+send_mail(subject, 'test_email_template.md', from_email, recipient_list, {'template_variable': 'value'})
 ```
