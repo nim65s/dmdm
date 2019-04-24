@@ -26,7 +26,7 @@ part with markdown. You can also provide a custom `css` and even images (that wi
 from dmdm import send_mail
 
 send_mail(subject, message, from_email, recipient_list, context=None, request=None, fail_silently=False, css=None,
-          image_root='.', auth_user=None, auth_password=None, connection=None)
+          image_root='.', auth_user=None, auth_password=None, connection=None, reply_to=None)
 ```
 
 If you want to write your markdown in a template, just put the name of the template in `message` and add a `context`

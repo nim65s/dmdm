@@ -15,7 +15,8 @@ def send_mail(subject,
               image_root='.',
               auth_user=None,
               auth_password=None,
-              connection=None):
+              connection=None,
+              reply_to=None):
     connection = connection or get_connection(
         username=auth_user,
         password=auth_password,
@@ -24,7 +25,12 @@ def send_mail(subject,
     if context is not None:
         message = get_template(message).render(context, request)
     content = EmailContent(message, css=css, image_root=image_root)
-    mail = EmailMultiAlternatives(subject, content.text, from_email, recipient_list, connection=connection)
+    mail = EmailMultiAlternatives(subject,
+                                  content.text,
+                                  from_email,
+                                  recipient_list,
+                                  connection=connection,
+                                  reply_to=reply_to)
     mail.attach_alternative(content.html, 'text/html')
 
     return mail.send()
