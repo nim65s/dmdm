@@ -1,3 +1,4 @@
+"""Main test code."""
 from django.core import mail
 from django.test import TestCase
 
@@ -5,7 +6,9 @@ from dmdm.mail import send_mail
 
 
 class TestDMDM(TestCase):
+    """Main test class."""
     def test_send_mail(self):
+        """Test to send a mail."""
         subject = 'subject'
         from_email = 'sender@example.org'
         recipient_list = ['someone@example.com']
