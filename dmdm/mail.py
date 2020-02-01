@@ -1,7 +1,9 @@
+"""Main source file."""
+
 from django.core.mail import EmailMultiAlternatives, get_connection
 from django.template.loader import get_template
 
-from mdmail.api import EmailContent
+from mdmail.api import EmailContent  # type: ignore
 
 
 def send_mail(subject,
@@ -17,6 +19,7 @@ def send_mail(subject,
               auth_password=None,
               connection=None,
               reply_to=None):
+    """Drop in replacement for django.core.email.send_mail."""
     connection = connection or get_connection(
         username=auth_user,
         password=auth_password,
