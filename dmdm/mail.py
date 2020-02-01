@@ -1,24 +1,27 @@
 """Main source file."""
+from typing import Dict, List, Optional
 
 from django.core.mail import EmailMultiAlternatives, get_connection
+from django.core.mail.backends.base import BaseEmailBackend
+from django.http import HttpRequest
 from django.template.loader import get_template
 
 from mdmail.api import EmailContent  # type: ignore
 
 
-def send_mail(subject,
-              message,
-              from_email,
-              recipient_list,
-              context=None,
-              request=None,
-              fail_silently=False,
-              css=None,
-              image_root='.',
-              auth_user=None,
-              auth_password=None,
-              connection=None,
-              reply_to=None):
+def send_mail(subject: str,
+              message: str,
+              from_email: str,
+              recipient_list: List[str],
+              context: Optional[Dict] = None,
+              request: Optional[HttpRequest] = None,
+              fail_silently: bool = False,
+              css: Optional[str] = None,
+              image_root: str = '.',
+              auth_user: Optional[str] = None,
+              auth_password: Optional[str] = None,
+              connection: Optional[BaseEmailBackend] = None,
+              reply_to: Optional[List[str]] = None) -> int:
     """Drop in replacement for django.core.email.send_mail."""
     connection = connection or get_connection(
         username=auth_user,
