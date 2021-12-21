@@ -4,6 +4,9 @@ version = "1.4.3"
 description = "Django MarkDown Mails"
 authors = ["Guilhem Saurel <guilhem.saurel@laas.fr>"]
 license = "BSD-2-Clause"
+readme = "README.md"
+homepage = "https://github.com/nim65s/dmdm"
+repository = "https://github.com/nim65s/dmdm.git"
 
 [tool.poetry.dependencies]
 python = "^3.6.1"
@@ -18,9 +21,10 @@ mypy = "^0.812"
 django-stubs = "^1.7.0"
 pydocstyle = "^6.0.0"
 pre-commit = "^2.11.1"
-setuptools-scm = "^6.0.1"
 Sphinx = "^3.5.3"
 coverage = "^5.5"
+myst-parser = "^0.15.1"
+types-toml = "^0.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
