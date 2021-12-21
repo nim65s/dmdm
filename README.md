@@ -28,13 +28,32 @@ part with markdown. You can also provide a custom `css` and even images (that wi
 ```python
 from dmdm import send_mail
 
-send_mail(subject, message, from_email, recipient_list, context=None, request=None, fail_silently=False, css=None,
-          image_root='.', auth_user=None, auth_password=None, connection=None, reply_to=None)
+def send_mail(
+    subject: str,
+    message: str,
+    from_email: str,
+    recipient_list: List[str],
+    context: Optional[Dict] = None,
+    request: Optional[HttpRequest] = None,
+    fail_silently: bool = False,
+    css: Optional[str] = None,
+    image_root: str = ".",
+    auth_user: Optional[str] = None,
+    auth_password: Optional[str] = None,
+    connection: Optional[BaseEmailBackend] = None,
+    reply_to: Optional[List[str]] = None,
+) -> int
 ```
 
 If you want to write your markdown in a template, just put the name of the template in `message` and add a `context`
 (which can be `{}`) and eventually a `request`:
 
-```
-send_mail(subject, 'test_email_template.md', from_email, recipient_list, {'template_variable': 'value'})
+```python
+send_mail(
+    subject,
+    "test_email_template.md",
+    from_email,
+    recipient_list,
+    {"template_variable": "value"},
+)
 ```
