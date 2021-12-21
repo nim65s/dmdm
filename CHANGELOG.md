@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- pipenv → poetry
+- travis → github actions
+- coveralls → codecov
+- yapf → black
+- maintenance misc
+
 ## [v1.4.3] - 2020-02-01
 
 - PEP-561 compatibility
