@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.4.4] - 2021-12-21
+
 - pipenv → poetry
 - travis → github actions
 - coveralls → codecov
@@ -44,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.1] - 2018-04-22
 ## [v1.0.0] - 2018-04-22
 
-[Unreleased]: https://github.com/nim65s/dmdm/compare/v1.4.3...master
+[Unreleased]: https://github.com/nim65s/dmdm/compare/v1.4.4...master
+[v1.4.4]: https://github.com/nim65s/dmdm/compare/v1.4.3...v1.4.4
 [v1.4.3]: https://github.com/nim65s/dmdm/compare/v1.4.2...v1.4.3
 [v1.4.2]: https://github.com/nim65s/dmdm/compare/v1.4.1...v1.4.2
 [v1.4.1]: https://github.com/nim65s/dmdm/compare/v1.4.0...v1.4.1
