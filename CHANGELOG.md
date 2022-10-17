@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- oopsies
+
 ## [v2.0.0] - 2022-10-17
 
 - :warning: require python >= 3.7
