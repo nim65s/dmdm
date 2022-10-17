@@ -11,7 +11,7 @@ Write your email in markdown, and send them in txt & html.
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.7+
 - Django 2.0+
 - [yejianye/mdmail](https://github.com/yejianye/mdmail)
 

@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- :warning: require python >= 3.7
 - add pyupgrade
+- mdmail → nmdmail
 
 ## [v1.4.5] - 2021-12-21
 
