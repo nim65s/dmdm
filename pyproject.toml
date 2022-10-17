@@ -8,12 +8,15 @@ readme = "README.md"
 homepage = "https://github.com/nim65s/dmdm"
 repository = "https://github.com/nim65s/dmdm.git"
 
+[tool.poetry.urls]
+changelog = "https://github.com/nim65s/dmdm/blob/master/CHANGELOG.md"
+
 [tool.poetry.dependencies]
 python = "^3.7"
 nmdmail = "^0.3.0"
 Django = ">=2.2,<5.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 flake8 = "^3.9.0"
 safety = "^1.10.3"
 mypy = "^0.812"
@@ -42,5 +45,5 @@ ignore = "D203,D204"  # https://github.com/google/yapf/issues/744
 match_dir = "(?=[^\\.])(?!migrations).*"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
