@@ -13,11 +13,11 @@ Write your email in markdown, and send them in txt & html.
 
 - Python 3.7+
 - Django 2.0+
-- [yejianye/mdmail](https://github.com/yejianye/mdmail)
+- [nmdmail](https://github.com/nim65s/nmdmail)
 
 ## Install
 
-`pip install dmdm`
+`python -m pip install dmdm`
 
 ## Usage
 

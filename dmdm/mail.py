@@ -5,8 +5,7 @@ from django.core.mail import EmailMultiAlternatives, get_connection
 from django.core.mail.backends.base import BaseEmailBackend
 from django.http import HttpRequest
 from django.template.loader import get_template
-
-from mdmail.api import EmailContent  # type: ignore
+from nmdmail.api import EmailContent
 
 
 def send_mail(
