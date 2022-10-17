@@ -15,6 +15,7 @@ changelog = "https://github.com/nim65s/dmdm/blob/master/CHANGELOG.md"
 python = "^3.7"
 nmdmail = "^0.3.0"
 Django = ">=2.2,<5.0"
+black = "^22.10.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^3.9.0"
@@ -27,7 +28,6 @@ Sphinx = "^3.5.3"
 coverage = "^5.5"
 myst-parser = "^0.15.1"
 types-toml = "^0.10.1"
-black = "^21.12b0"
 pyupgrade = "^2.31.0"
 
 [tool.coverage.run]
