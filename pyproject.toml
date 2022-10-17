@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dmdm"
-version = "1.4.5"
+version = "2.0.0"
 description = "Django MarkDown Mails"
 authors = ["Guilhem Saurel <guilhem.saurel@laas.fr>"]
 license = "BSD-2-Clause"

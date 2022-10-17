@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.0] - 2022-10-17
+
 - :warning: require python >= 3.7
 - add pyupgrade
 - mdmail → nmdmail
@@ -54,7 +56,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.1] - 2018-04-22
 ## [v1.0.0] - 2018-04-22
 
-[Unreleased]: https://github.com/nim65s/dmdm/compare/v1.4.5...master
+[Unreleased]: https://github.com/nim65s/dmdm/compare/v2.0.0...master
+[v2.0.0]: https://github.com/nim65s/dmdm/compare/v1.4.5...v2.0.0
 [v1.4.5]: https://github.com/nim65s/dmdm/compare/v1.4.4...v1.4.5
 [v1.4.4]: https://github.com/nim65s/dmdm/compare/v1.4.3...v1.4.4
 [v1.4.3]: https://github.com/nim65s/dmdm/compare/v1.4.2...v1.4.3
