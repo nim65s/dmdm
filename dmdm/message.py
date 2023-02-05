@@ -13,7 +13,7 @@ class EmailMultiAlternativesInline(EmailMultiAlternatives):
     """Extend EmailMultiAlternative with inline attachments."""
 
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+        return super().__init__(*args, **kwargs)
         self.inlines = []
 
     def inline(self, filename=None, content=None, mimetype=None):
