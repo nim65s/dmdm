@@ -1,14 +1,11 @@
 """Main source file."""
 from typing import Dict, List, Optional
 
-from django.core.mail import get_connection
+from django.core.mail import EmailMultiAlternatives, get_connection
 from django.core.mail.backends.base import BaseEmailBackend
 from django.http import HttpRequest
 from django.template.loader import get_template
-
 from nmdmail.api import EmailContent
-
-from .message import EmailMultiAlternativesInline
 
 
 def send_mail(
@@ -35,7 +32,7 @@ def send_mail(
     if context is not None:
         message = get_template(message).render(context, request)
     content = EmailContent(message, css=css, image_root=image_root)
-    mail = EmailMultiAlternativesInline(
+    mail = EmailMultiAlternatives(
         subject,
         content.text,
         from_email,
@@ -43,8 +40,8 @@ def send_mail(
         connection=connection,
         reply_to=reply_to,
     )
-    mail.attach_alternative(content.html, "text/html")
     for filename, data in content.inline_images:
-        mail.inline(filename, data)
+        mail.attach(filename, data)
+    mail.attach_alternative(content.html, "text/html")
 
     return mail.send()
