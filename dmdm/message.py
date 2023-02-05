@@ -1,8 +1,6 @@
 """Extend django/core/mail/message.py."""
 
-from email import encoders as Encoders
-from email.mime.base import MIMEBase
-import mimetypes
+from django.conf import settings
 from django.core.mail.message import (
     EmailMultiAlternatives,
     DEFAULT_ATTACHMENT_MIME_TYPE,
@@ -48,7 +46,6 @@ class EmailMultiAlternativesInline(EmailMultiAlternatives):
         return inline
 
     def _create_mime_inline(self, content, mimetype):
-        basetype, subtype = mimetype.split("/", 1)
         inline = MIMEBase(basetype, subtype)
         inline.set_payload(content)
         Encoders.encode_base64(inline)
