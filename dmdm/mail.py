@@ -40,6 +40,8 @@ def send_mail(
         connection=connection,
         reply_to=reply_to,
     )
+    for filename, data in content.inline_images:
+        mail.attach(filename, data)
     mail.attach_alternative(content.html, "text/html")
 
     return mail.send()
