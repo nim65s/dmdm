@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.3] - 2023-02-05
+
 - attach images
 
 ## [v2.0.2] - 2022-10-17
@@ -66,7 +68,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.1] - 2018-04-22
 ## [v1.0.0] - 2018-04-22
 
-[Unreleased]: https://github.com/nim65s/dmdm/compare/v2.0.2...master
+[Unreleased]: https://github.com/nim65s/dmdm/compare/v2.0.3...master
+[v2.0.3]: https://github.com/nim65s/dmdm/compare/v2.0.2...v2.0.3
 [v2.0.2]: https://github.com/nim65s/dmdm/compare/v2.0.1...v2.0.2
 [v2.0.1]: https://github.com/nim65s/dmdm/compare/v2.0.0...v2.0.1
 [v2.0.0]: https://github.com/nim65s/dmdm/compare/v1.4.5...v2.0.0
