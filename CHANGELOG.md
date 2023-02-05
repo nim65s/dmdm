@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- inline images instead of attaching them
+
 ## [v2.0.3] - 2023-02-05
 
 - attach images
