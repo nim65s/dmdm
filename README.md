@@ -11,7 +11,7 @@ Write your email in markdown, and send them in txt & html.
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.8+
 - Django 2.0+
 - [nmdmail](https://github.com/nim65s/nmdmail)
 
