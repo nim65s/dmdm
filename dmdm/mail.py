@@ -1,4 +1,5 @@
 """Main source file."""
+
 from typing import Dict, List, Optional
 
 from django.core.mail import EmailMultiAlternatives, get_connection
