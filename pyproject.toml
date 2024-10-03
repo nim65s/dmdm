@@ -12,7 +12,7 @@ repository = "https://github.com/nim65s/dmdm.git"
 changelog = "https://github.com/nim65s/dmdm/blob/master/CHANGELOG.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 nmdmail = "^0.3.0"
 Django = ">=2.2,<5.0"
 
