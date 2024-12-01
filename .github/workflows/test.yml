@@ -25,4 +25,4 @@ jobs:
           PYTHONWARNINGS: error
       - run: python -m pip install "git+https://github.com/${GITHUB_REPOSITORY}.git#egg=dmdm"
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
