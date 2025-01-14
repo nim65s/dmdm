@@ -2,8 +2,8 @@
 
 [![PyPI version](https://badge.fury.io/py/dmdm.svg)](https://pypi.org/project/dmdm)
 [![Tests](https://github.com/nim65s/dmdm/actions/workflows/test.yml/badge.svg)](https://github.com/nim65s/dmdm/actions/workflows/test.yml)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/nim65s/dmdm/master.svg)](https://results.pre-commit.ci/latest/github/nim65s/dmdm/master)
-[![codecov](https://codecov.io/gh/nim65s/dmdm/branch/master/graph/badge.svg?token=CUHNXAVJPO)](https://codecov.io/gh/nim65s/dmdm)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/nim65s/dmdm/main.svg)](https://results.pre-commit.ci/latest/github/nim65s/dmdm/main)
+[![codecov](https://codecov.io/gh/nim65s/dmdm/branch/main/graph/badge.svg?token=CUHNXAVJPO)](https://codecov.io/gh/nim65s/dmdm)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6737a84239590ddc0d1e/maintainability)](https://codeclimate.com/github/nim65s/dmdm/maintainability)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
