@@ -1,10 +1,12 @@
-[tool.poetry]
+[project]
 name = "dmdm"
 version = "2.0.3"
 description = "Django MarkDown Mails"
-authors = ["Guilhem Saurel <guilhem.saurel@laas.fr>"]
+authors = [{name = "Guilhem Saurel", email = "guilhem.saurel@laas.fr"}]
 license = "BSD-2-Clause"
 readme = "README.md"
+
+[project.urls]
 homepage = "https://github.com/nim65s/dmdm"
 repository = "https://github.com/nim65s/dmdm.git"
 
