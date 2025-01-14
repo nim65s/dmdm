@@ -11,7 +11,7 @@ homepage = "https://github.com/nim65s/dmdm"
 repository = "https://github.com/nim65s/dmdm.git"
 
 [tool.poetry.urls]
-changelog = "https://github.com/nim65s/dmdm/blob/master/CHANGELOG.md"
+changelog = "https://github.com/nim65s/dmdm/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
