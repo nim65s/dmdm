@@ -1,40 +1,42 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[dependency-groups]
+dev = [
+  "coverage>=7.6.12",
+  "django-stubs>=5.1.3",
+  "mypy>=1.15.0",
+  "myst-parser>=4.0.1",
+  "pre-commit>=4.1.0",
+  "ruff>=0.9.7",
+  "sphinx>=7",
+  "types-toml>=0.10.8.20240310"
+]
+
 [project]
-name = "dmdm"
-version = "2.0.3"
+authors = [
+  {email = "guilhem.saurel@laas.fr", name = "Guilhem Saurel"}
+]
+dependencies = [
+  "django>=5.1.6",
+  "nmdmail>=0.4.0"
+]
 description = "Django MarkDown Mails"
-authors = [{name = "Guilhem Saurel", email = "guilhem.saurel@laas.fr"}]
 license = "BSD-2-Clause"
+name = "dmdm"
 readme = "README.md"
+requires-python = ">=3.10"
+version = "2.0.3"
 
 [project.urls]
+changelog = "https://github.com/nim65s/dmdm/blob/main/CHANGELOG.md"
 homepage = "https://github.com/nim65s/dmdm"
 repository = "https://github.com/nim65s/dmdm.git"
 
-[tool.poetry.urls]
-changelog = "https://github.com/nim65s/dmdm/blob/main/CHANGELOG.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-nmdmail = "^0.3.0"
-Django = ">=5.1.1"
-
-[tool.poetry.group.dev.dependencies]
-flake8 = "^7.1.1"
-safety = "^3.2.8"
-mypy = "^1.11.2"
-django-stubs = "^5.1.0"
-pydocstyle = "^6.3.0"
-pre-commit = "^3.8.0"
-Sphinx = "^8.0.2"
-coverage = "^7.6.1"
-myst-parser = "^4.0.0"
-types-toml = "^0.10.1"
-pyupgrade = "^3.17.0"
-black = "^24.8.0"
-
 [tool.coverage.run]
+omit = ["*/apps.py", "*/migrations/*", "*/wsgi.py"]
 source = ["dmdm"]
-omit = ["*/migrations/*", "*/wsgi.py", "*/apps.py"]
 
 [tool.django-stubs]
 django_settings_module = "testproject.settings"
@@ -42,10 +44,5 @@ django_settings_module = "testproject.settings"
 [tool.mypy]
 plugins = ["mypy_django_plugin.main"]
 
-[tool.pydocstyle]
-ignore = "D203,D204"  # https://github.com/google/yapf/issues/744
-match_dir = "(?=[^\\.])(?!migrations).*"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.tomlsort]
+all = true
