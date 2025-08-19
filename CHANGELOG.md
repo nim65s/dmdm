@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - support python 3.13
 - setup mergify
 - master -> main
+- poetry -> uv
 
 ## [v2.0.3] - 2023-02-05
 
