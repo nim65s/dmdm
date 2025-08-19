@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v3.0.0] - 2025-08-19
+
 - :warning: require python >= 3.10
 - support python 3.13
 - setup mergify
@@ -74,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.1] - 2018-04-22
 ## [v1.0.0] - 2018-04-22
 
-[Unreleased]: https://github.com/nim65s/dmdm/compare/v2.0.3...main
+[Unreleased]: https://github.com/nim65s/dmdm/compare/v3.0.0...main
+[v3.0.0]: https://github.com/nim65s/dmdm/compare/v2.0.3...v3.0.0
 [v2.0.3]: https://github.com/nim65s/dmdm/compare/v2.0.2...v2.0.3
 [v2.0.2]: https://github.com/nim65s/dmdm/compare/v2.0.1...v2.0.2
 [v2.0.1]: https://github.com/nim65s/dmdm/compare/v2.0.0...v2.0.1
