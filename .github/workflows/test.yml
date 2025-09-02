@@ -15,7 +15,7 @@ jobs:
       matrix:
         python-version: ["3.10", "3.11", "3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: sudo apt update && sudo apt install -qy libxml2 libxslt1-dev
       - uses: astral-sh/setup-uv@v6
         with:
