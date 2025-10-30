@@ -3,7 +3,6 @@
 
 [[ $(basename "$PWD") == docs ]] && cd ..
 
-
 OLD=$(uv version --short)
 uv version --bump $1
 NEW=$(uv version --short)
@@ -13,7 +12,7 @@ sed -i "/^## \[Unreleased\]/a \\\n## [v$NEW] - $DATE" CHANGELOG.md
 sed -i "/^\[Unreleased\]/s/$OLD/$NEW/" CHANGELOG.md
 sed -i "/^\[Unreleased\]/a [v$NEW]: https://github.com/nim65s/dmdm/compare/v$OLD...v$NEW" CHANGELOG.md
 
-git add pyproject.toml uv.lock CHANGELOG.md
+git add pyproject.toml uv.lock CHANGELOG.md uv.lock
 git commit -m "Release v$NEW"
 git tag -s "v$NEW" -m "Release v$NEW"
 git push
