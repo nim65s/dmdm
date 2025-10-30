@@ -1,6 +1,6 @@
 """Main source file."""
 
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple, Any
 
 from django.core.mail import EmailMultiAlternatives, get_connection
 from django.core.mail.backends.base import BaseEmailBackend
@@ -23,6 +23,7 @@ def send_mail(
     auth_password: Optional[str] = None,
     connection: Optional[BaseEmailBackend] = None,
     reply_to: Optional[List[str]] = None,
+    attachments: Optional[List[Tuple[str, Any, str]]] = None,
 ) -> int:
     """Drop in replacement for django.core.email.send_mail."""
     connection = connection or get_connection(
@@ -43,6 +44,9 @@ def send_mail(
     )
     for filename, data in content.inline_images:
         mail.attach(filename, data)
+    if attachments:
+        for filename, data, mimetype in attachments:
+            mail.attach(filename, data, mimetype)
     mail.attach_alternative(content.html, "text/html")
 
     return mail.send()
