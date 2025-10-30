@@ -27,7 +27,7 @@ license = "BSD-2-Clause"
 name = "dmdm"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "3.0.0"
+version = "3.1.0"
 
 [project.urls]
 changelog = "https://github.com/nim65s/dmdm/blob/main/CHANGELOG.md"
