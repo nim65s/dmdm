@@ -701,7 +701,7 @@ wheels = [
 
 [[package]]
 name = "nmdmail"
-version = "0.5.0"
+version = "0.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -710,9 +710,9 @@ dependencies = [
     { name = "markdown" },
     { name = "premailer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c3/c8/2fcff532c1b1fa5243be96e25d62d480f28f7440e7582cf2e70a84dcd5b3/nmdmail-0.5.0.tar.gz", hash = "sha256:82c0be32fe5c3b4b765fdf9054bd4742319276fc46866d860deb4918443fb5f6", size = 161476, upload-time = "2025-02-20T23:56:28.521Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ce/3b/289fd4d3213f86fb97871723d9d6f60115cb3c40256e4c5cec9d7005fa3a/nmdmail-0.6.0.tar.gz", hash = "sha256:945353358c308664f0e72eca0146901ceb47fc16262c37dd4ed219aec5381319", size = 5937, upload-time = "2025-10-30T21:05:53.333Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/e0/798ebb0c8b082e077712e2958ba5d714f835841f61a12c5d00dfde532d71/nmdmail-0.5.0-py3-none-any.whl", hash = "sha256:8c4d506cad6ee731710d520891453ae66eee2af5d90af5dca1cdad8358973121", size = 8145, upload-time = "2025-02-20T23:56:27.037Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/b8/0221a2c05b846ac0fbff1d89a7223754cb3197116ce0c4a7752dd8d97a40/nmdmail-0.6.0-py3-none-any.whl", hash = "sha256:52bb0fa4399c3157959d9faef17ed51b54c197f935c2c726fde560434147a448", size = 7463, upload-time = "2025-10-30T21:05:51.997Z" },
 ]
 
 [[package]]
