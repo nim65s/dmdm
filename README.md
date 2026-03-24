@@ -42,6 +42,7 @@ def send_mail(
     auth_password: Optional[str] = None,
     connection: Optional[BaseEmailBackend] = None,
     reply_to: Optional[List[str]] = None,
+    headers: Optional[Dict[str, str]] = None,
 ) -> int
 ```
 
