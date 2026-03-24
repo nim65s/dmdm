@@ -24,6 +24,7 @@ def send_mail(
     connection: Optional[BaseEmailBackend] = None,
     reply_to: Optional[List[str]] = None,
     attachments: Optional[List[Tuple[str, Any, str]]] = None,
+    headers: Optional[Dict[str, str]] = None,
 ) -> int:
     """Drop in replacement for django.core.email.send_mail."""
     connection = connection or get_connection(
@@ -41,6 +42,7 @@ def send_mail(
         recipient_list,
         connection=connection,
         reply_to=reply_to,
+        headers=headers,
     )
     for filename, data in content.inline_images:
         mail.attach(filename, data)
