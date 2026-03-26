@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v4.0.0] - 2026-03-26
+
 - embed inline images as related to latest payload. fix displaying images in thunderbird.
 
 ## [v3.2.0] - 2026-03-24
@@ -87,7 +89,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.1] - 2018-04-22
 ## [v1.0.0] - 2018-04-22
 
-[Unreleased]: https://github.com/nim65s/dmdm/compare/v3.2.0...main
+[Unreleased]: https://github.com/nim65s/dmdm/compare/v4.0.0...main
+[v4.0.0]: https://github.com/nim65s/dmdm/compare/v3.2.0...v4.0.0
 [v3.2.0]: https://github.com/nim65s/dmdm/compare/v3.1.0...v3.2.0
 [v3.1.0]: https://github.com/nim65s/dmdm/compare/v3.0.0...v3.1.0
 [v3.0.0]: https://github.com/nim65s/dmdm/compare/v2.0.3...v3.0.0
