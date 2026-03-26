@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- embed inline images as related to latest payload. fix displaying images in thunderbird.
+
 ## [v3.2.0] - 2026-03-24
 
 - allow arbitrary headers
