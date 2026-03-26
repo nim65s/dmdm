@@ -1,6 +1,6 @@
 """Main source file."""
 
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, List, Optional, Tuple, Any, ItemsView
 
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives, get_connection
@@ -16,14 +16,16 @@ class DMDM(EmailMultiAlternatives):
         self,
         *args,
         html: str | None = None,
-        inline_images: dict[str, bytes] | None = None,
+        inline_images: ItemsView[str, bytes] | None = None,
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
         if html is None:
             raise AttributeError("you probably need html here")
         self.attach_alternative(html, "text/html")
-        self.inline_images: dict[str, bytes] = inline_images or {}
+        self.inline_images: ItemsView[str, bytes] | list[tuple[str, bytes]] = (
+            inline_images or []
+        )
 
     def _add_bodies(self, msg):
         msg.make_alternative()
