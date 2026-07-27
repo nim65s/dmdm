@@ -1,13 +1,14 @@
 """Main source file."""
 
-from typing import Dict, List, Optional, Tuple, Any, ItemsView
+from collections.abc import ItemsView
+from typing import Any
 
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives, get_connection
-from django.utils.encoding import force_bytes
 from django.core.mail.backends.base import BaseEmailBackend
 from django.http import HttpRequest
 from django.template.loader import get_template
+from django.utils.encoding import force_bytes
 from nmdmail.api import EmailContent
 
 
@@ -51,18 +52,18 @@ def send_mail(
     subject: str,
     message: str,
     from_email: str,
-    recipient_list: List[str],
-    context: Optional[Dict] = None,
-    request: Optional[HttpRequest] = None,
+    recipient_list: list[str],
+    context: dict | None = None,
+    request: HttpRequest | None = None,
     fail_silently: bool = False,
-    css: Optional[str] = None,
+    css: str | None = None,
     image_root: str = ".",
-    auth_user: Optional[str] = None,
-    auth_password: Optional[str] = None,
-    connection: Optional[BaseEmailBackend] = None,
-    reply_to: Optional[List[str]] = None,
-    attachments: Optional[List[Tuple[str, Any, str]]] = None,
-    headers: Optional[Dict[str, str]] = None,
+    auth_user: str | None = None,
+    auth_password: str | None = None,
+    connection: BaseEmailBackend | None = None,
+    reply_to: list[str] | None = None,
+    attachments: list[tuple[str, Any, str]] | None = None,
+    headers: dict[str, str] | None = None,
 ) -> int:
     """Drop in replacement for django.core.email.send_mail."""
     connection = connection or get_connection(
