@@ -1,6 +1,5 @@
 """Django settings for testproject project."""
 
-from typing import List
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -17,7 +16,7 @@ SECRET_KEY = "4va!ay=y2*9=e5j(e=^icj+rugwk1xjnxhzgl6=7f7yh6=%&&="
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS: List[str] = []
+ALLOWED_HOSTS: list[str] = []
 
 # Application definition
 
