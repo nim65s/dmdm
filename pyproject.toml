@@ -16,7 +16,7 @@ dev = [
 
 [project]
 authors = [
-  {email = "guilhem.saurel@laas.fr", name = "Guilhem Saurel"}
+  { email = "guilhem.saurel@laas.fr", name = "Guilhem Saurel" }
 ]
 dependencies = [
   "django>=5.1.6",
